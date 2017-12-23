@@ -11,15 +11,18 @@
     <hr />
     <div class="user-footer">
         <div class="copyright alignable pull-left">
-            {% if site.copyright %}
-                <h2> &copy;{{ site.copyright }} <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}" class="button">
-                @{{ site.twitter_username }}
-            </a></h2>
-            {% else %}
-                <h2> &copy;{{ site.title }} <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}" class="button">
-                @{{ site.twitter_username }}
-            </a></h2>
-            {% endif %}
+            <h2> 
+                <a href="/">&copy;{{ site.copyright }} </a>
+                <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}" class="button">
+                    @{{ site.twitter_username }}
+                </a>
+                <a target="_blank" href="https://github.com/{{ site.github_username}}" class="button">
+                    github/{{ site.github_username }}
+                </a>
+                <a target="_blank" href="http://www.agilogy.com" class="button">
+                    www.agilogy.com
+                </a>
+            </h2>
         </div>
         <div class="copyright alignable pull-right">
             Categories:
