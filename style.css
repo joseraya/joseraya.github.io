@@ -1,0 +1,124 @@
+:root {
+  --accent-color: #fc8c03;
+}
+
+body {
+  display: grid;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 80px;
+  max-width: 800px;
+  margin: auto;
+  padding: 1.5em;
+  height: 100%;
+  overflow: auto;
+}
+
+h2 {
+	font-family: Montserrat;
+	font-size: 30px;
+}
+.accent {
+	color: var(--accent-color);
+}
+
+a:hover {
+ text-decoration:none;
+ background-color:#fc8c03
+}
+
+.faded {
+	color:#ccc;
+}
+
+.photo {
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	background: url("foto-jose.png") no-repeat;
+	box-shadow: 0 0 8px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 8px
+	rgba(0,0,0,0.8);
+	-moz-box-shadow: 0 0 8px rgba(0,0,0,0.8);
+	margin-bottom: 3em;
+}
+
+.description p {
+	font-size: 19px;
+	margin: .5em 0;
+	font-weight: lighter;
+	line-height: 1.5em;
+	padding: 1.5em;
+}
+
+hr.star-light {
+    margin: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    border-color: #000;
+    width: 15rem;
+    padding: 0;
+    text-align: center;
+    border: none;
+        border-top-color: currentcolor;
+        border-top-style: none;
+        border-top-width: medium;
+        border-right-color: currentcolor;
+        border-bottom-color: currentcolor;
+        border-left-color: currentcolor;
+    border-top-width: medium;
+    border-top-style: none;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+    border-top: solid .25rem;
+        border-top-color: currentcolor;
+    border-top-color: currentcolor;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    color: 
+    #000 !important;
+}
+
+hr.star-light::after {
+    position: relative;
+    background-color: 
+    #fff;
+    top: -.5em;
+    display: inline-block;
+    padding: 0 .25em;
+    content: '*';
+    #content: '\f005';
+    #font-family: FontAwesome;
+    font-size: 2em;
+}
+
+footer {
+	font-weight: lighter;
+}
+
+footer a {
+
+}
+
+footer a {
+  font-weight: lighter;
+  font-size: 13px;
+  border-radius: 20px;
+  background: #fff;
+  padding: .375em 1.5em;
+  color: #999;
+}
+
+footer a:hover {
+  background: var(--accent-color);
+  color: #fff;
+  -webkit-transition:0.3s ease
+}
