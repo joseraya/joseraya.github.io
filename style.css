@@ -2,123 +2,197 @@
   --accent-color: #fc8c03;
 }
 
+/* css reset code from https://www.joshwcomeau.com/css/custom-css-reset/*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
 body {
-  display: grid;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
-  font-size: 18px;
-  padding-top: 80px;
-  max-width: 800px;
-  margin: auto;
-  padding: 1.5em;
-  height: 100%;
-  overflow: auto;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* end of css reset */
+
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 80%;
+  max-width: 640px;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+
 }
 
 h2 {
-	font-family: Montserrat;
-	font-size: 30px;
-}
-.accent {
-	color: var(--accent-color);
-}
-
-a:hover {
- text-decoration:none;
- background-color:#fc8c03
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.faded {
-	color:#ccc;
+h3 {
+  font-weight: normal;
+  margin-bottom: 1rem;
 }
 
-.photo {
-	margin: auto;
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	background: url("foto-jose.png") no-repeat;
-	box-shadow: 0 0 8px rgba(0,0,0,0.8);
-	-webkit-box-shadow: 0 0 8px
-	rgba(0,0,0,0.8);
-	-moz-box-shadow: 0 0 8px rgba(0,0,0,0.8);
-	margin-bottom: 3em;
+p {
+  margin-bottom: 1rem;
 }
 
-.description p {
-	font-size: 19px;
-	margin: .5em 0;
-	font-weight: lighter;
-	line-height: 1.5em;
-	padding: 1.5em;
+.about {
+  h2 {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
-hr.star-light {
-    margin: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-    border-color: #000;
-    width: 15rem;
-    padding: 0;
-    text-align: center;
-    border: none;
-        border-top-color: currentcolor;
-        border-top-style: none;
-        border-top-width: medium;
-        border-right-color: currentcolor;
-        border-bottom-color: currentcolor;
-        border-left-color: currentcolor;
-    border-top-width: medium;
-    border-top-style: none;
-    border-top-color: currentcolor;
-    border-right-color: currentcolor;
-    border-bottom-color: currentcolor;
-    border-left-color: currentcolor;
-    border-top: solid .25rem;
-        border-top-color: currentcolor;
-    border-top-color: currentcolor;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-    color: 
-    #000 !important;
+.bio {}
+
+.profile_photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-hr.star-light::after {
-    position: relative;
-    background-color: 
-    #fff;
-    top: -.5em;
-    display: inline-block;
-    padding: 0 .25em;
-    content: '*';
-    #content: '\f005';
-    #font-family: FontAwesome;
-    font-size: 2em;
+div.about {
+  max-width: 520px;
 }
 
-footer {
-	font-weight: lighter;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
-footer a {
-
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-footer a {
-  font-weight: lighter;
-  font-size: 13px;
-  border-radius: 20px;
-  background: #fff;
-  padding: .375em 1.5em;
-  color: #999;
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-footer a:hover {
-  background: var(--accent-color);
-  color: #fff;
-  -webkit-transition:0.3s ease
+.card h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  color: #1f2937;
+}
+
+.card .company {
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+.card .date {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.links {
+  margin-bottom: 1rem;
+}
+.links a {.
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* space between icon and text */
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border-radius: 9999px; /* makes it pill-shaped */
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+
 }
